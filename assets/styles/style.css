@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
+    
+  }
+  main{
+    background: linear-gradient(180deg, #FFFCFC 0%, #D9D4D4 100%);
+  }
+
+
+header picture img {
+    width: 80px;
+    padding-left: 10px;
+}
+
+header {
+    background: linear-gradient(180deg, #302834 0%, #19191E 100%);
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    padding: 10px 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+#tema {
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+#labeltema {
+    position: relative;
+}
+
+header div label span div {
+    margin-top: 15px;
+    margin-right: 10px;
+    display: flex;
+    align-items: end;
+    width: 28px;
+    padding-right: 10px;
+    fill: rgb(215, 212, 212);
+    filter: drop-shadow(0px 0px 10.44px #FFFFFF)
+}
+
+.sol-e-lua {
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/moon-solid.png);
+    background-repeat: no-repeat;
+}
+
+#labeltema span div {
+    transform: rotateX(0deg);
+    transition: all 0.2s;
+}
+
+#labeltema:has(+ #tema:checked) span div {
+    transform: rotateX(180deg);
+    background-image: url(../img/sun-solid.png);
+    filter: drop-shadow(0px 0px 10.44px #E5E76E)
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 15vh);
+}
+
+.banner-l{
+    gap: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    width: 80%;
+    height: fit-content;
+    background-color: #fff;
+    border: 3px solid #000000;
+    box-shadow: 24px 20px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.banner-l div{
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.226) !important;
+    border-radius: 100%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-l div img {
+    width: 80%;
+}
+
+.noite .banner-l {
+    background: linear-gradient(180deg, #302834 0%, #19191E 100%);
+    border: 3px solid #fff;
+    box-shadow: 24px 20px 10px rgba(95, 95, 95, 0.25);
+}
+.noite .banner-l div{
+    background-color: rgba(255, 255, 255, 0.226) !important;
+}
+.noite p, .noite h1{
+    color: white;
+}
+
+.noite main{
+    background-image: linear-gradient(180deg, #130e17 0%, #202021 100%);
+}
+
+#um{
+    padding-top:10000px;
+}
+
+.divtitulo{
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+#divtexto{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+    width: 70%;
+    padding-bottom: 20px;
+}
+a{
+    font-weight: 600;
+}
+#divtexto p{
+    font-weight: 700;
+}
