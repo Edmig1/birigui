@@ -11,9 +11,16 @@
             width: 120px;
             height: 120px;
 }
+@media(max-width:750px){
+    #mapa1{
+        display: none;
+    }
+    #mapa2{
+        display: flex;
+    }
+}
 @media(max-width:425px){
     .banner-l div{
         width: 80px;
         height: 80px;
-}
-}
+}}
