@@ -87,7 +87,17 @@ nav a:hover::after{
     border: 3px solid #ffffff;
     border-radius: 20px;
 }
+.menu-popup{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 .menu-popup a {
+    width: 100%;
+    text-decoration: none;
     text-align: center;
     display: flex;
     position: relative;
@@ -95,15 +105,25 @@ nav a:hover::after{
     flex-direction: column;
     color: white;
 }
+.menu-popup a::after{
+    display: flex;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu-popup :hover::after{
+    width: 100%;
+}
 .fechar-popup{
     position: absolute;
     right: 10px;
     top: 5px;
     cursor: pointer;
-}
-.menu-popup a:hover{
-    font-size: large;
-    transition: 0.5s ease-in-out;
 }
 
 #tema {
