@@ -236,3 +236,37 @@ a{
 #mapa2{
     display: none;
 }
+.criterios-inpi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D4D4;
+    height: 101%;
+}
+.titulo-criterios{
+    text-align: center;
+    font-size: 3em;
+}
+.criterios{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    width: 70%;
+}
+.svg-cima{
+    transform:rotateX(180deg);
+}
+.divsvg{
+    margin-bottom: -5px;
+}
+.noite .divsvg path{
+    fill: #302834;
+}
+.noite .criterios-inpi{
+    background-color: #302834;
+    color: white;
+}
