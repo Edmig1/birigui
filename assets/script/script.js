@@ -24,4 +24,3 @@ btnpopup.forEach(function(element) {
       wrapper.style.display = "none";
     });
   });
-  

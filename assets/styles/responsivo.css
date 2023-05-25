@@ -17,10 +17,15 @@
 }
 
 @media(max-width:750px) {
-    #mapa1 {
-        display: none;
+    .benef-texto{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
     }
-
+    .benef-texto div{
+        width: 65%;
+    }
     #mapa2 {
         display: flex;
     }
