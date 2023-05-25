@@ -25,6 +25,7 @@
     }
     .benef-texto div{
         width: 65%;
+        height: 160px;
     }
     #mapa2 {
         display: flex;
