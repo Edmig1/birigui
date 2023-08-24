@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +10,10 @@
 }
 html {
     scroll-behavior: smooth;
-    
+
   }
   main{
     background: linear-gradient(180deg, #FFFCFC 0%, #D9D4D4 100%);
-
   }
 
 header picture img {
@@ -130,18 +128,15 @@ nav a:hover::after{
     top: 5px;
     cursor: pointer;
 }
-
 #tema {
     background-color: transparent !important;
     border: none;
     outline: none;
     appearance: none;
 }
-
 #labeltema {
     position: relative;
 }
-
 header div label span div {
     margin-top: 15px;
     margin-right: 10px;
@@ -152,7 +147,6 @@ header div label span div {
     fill: rgb(215, 212, 212);
     filter: drop-shadow(0px 0px 10.44px #FFFFFF)
 }
-
 .sol-e-lua {
     width: 28px;
     height: 28px;
@@ -163,20 +157,23 @@ header div label span div {
     transform: rotateX(0deg);
     transition: all 0.2s;
 }
-
 #labeltema:has(+ #tema:checked) span div {
     transform: rotateX(180deg);
     background-image: url(../img/sun-solid.png);
     filter: drop-shadow(0px 0px 10.44px #E5E76E)
 }
-
+#titulo-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 15vh);
 }
-
 .banner-l{
     gap: 20px;
     display: grid;
@@ -236,15 +233,15 @@ header div label span div {
 .noite p, .noite h1{
     color: white;
 }
-
+.noite #titulo-banner{
+    color: white;
+}
 .noite main{
     background-image: linear-gradient(180deg, #130e17 0%, #202021 100%);
 }
-
 #um{
     padding-top:10000px;
 }
-
 .divtitulo{
     padding-top: 20px;
     font-size: 2em;
